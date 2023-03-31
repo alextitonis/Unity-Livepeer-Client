@@ -1,0 +1,5 @@
+Assets/AgoraChat/** filter=lfs diff=lfs merge=lfs -text
+Assets/AgoraEngine/** filter=lfs diff=lfs merge=lfs -text
+Assets/AgoraChat/Plugins/iOS/HyphenateChat.framework/HyphenateChat filter=lfs diff=lfs merge=lfs -text
+Assets/AgoraChat filter=lfs diff=lfs merge=lfs -text
+Assets/AgoraEngine/Plugins/iOS/AgoraRtcKit.framework/AgoraRtcKit filter=lfs diff=lfs merge=lfs -text
