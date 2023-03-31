@@ -116,3 +116,16 @@ Delete Stream is used to delete a stream using its ID
 ```
 MainAPI.Instance.DeleteStream(streamId);
 ```
+
+### Play HLS Stream
+
+#### Option 1
+* Add the Video Player Prefab
+* Find the NexPlayer_Manager object (child of Video Player)
+* Set URL value, tick the Is Live Stream and AutoPlay
+
+#### Option 2
+* Add the VideoManager.cs script in a game object in the scene
+* Set the streamId and playback_base_url values
+* Assign the NexPlayer script
+* It is setup to play the stream On Start, otherwise PlayStream function can be called to play a stream on run-time
