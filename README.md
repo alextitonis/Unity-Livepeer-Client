@@ -3,6 +3,7 @@
 ## How to run
 
 Download the Repository and open it with unity (Built in 2021.3.17f1)
+Install https://github.com/NexPlayer/NexPlayer_Unity_Plugin in the project
 There is a Main Scene, where there is a sample setup.
 The project consists of 2 main Prefabs
 * The API, which handles the web requests
