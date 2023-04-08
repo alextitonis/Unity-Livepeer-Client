@@ -1,4 +1,4 @@
 ﻿public static class Constants
 {
-    public static string STREAM_URL = "https://livepeer.com/api/stream";
+    public static string API_URL = "https://livepeer.studio/api/";
 }
