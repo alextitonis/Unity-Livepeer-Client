@@ -118,6 +118,53 @@ Delete Stream is used to delete a stream using its ID
 MainAPI.Instance.DeleteStream(streamId);
 ```
 
+### Transcode Video
+Transcode Video transcodes a video file and uploads the results to the specified storage service.
+```
+MainAPI.Instance.TranscodeVideo(data, callback);
+```
+Data Input:
+```
+{
+   "input":{
+      "url":"https://www.example.com/video.mp4"
+   },
+   "storage":{
+      "type":"s3",
+      "endpoint":"https://gateway.storjshare.io",
+      "credentials":{
+         "accessKeyId":"$ACCESS_KEY_ID",
+         "secretAccessKey":"$SECRET_ACCESS_KEY"
+      },
+      "bucket":"mybucket"
+   },
+   "outputs":{
+      "hls":{
+         "path":"/samplevideo/hls"
+      },
+      "mp4":{
+         "path":"/samplevideo/mp4"
+      }
+   },
+   "profiles":[
+      {
+         "name":"480p",
+         "bitrate":1000000,
+         "fps":30,
+         "width":854,
+         "height":480
+      },
+      {
+         "name":"360p",
+         "bitrate":500000,
+         "fps":30,
+         "width":640,
+         "height":360
+      }
+   ]
+}
+```
+
 ### Play HLS Stream
 
 #### Option 1
