@@ -166,7 +166,7 @@ The privateKey is displayed only on creation. This is the only moment where the 
 Up to 10 signing keys can be generated, after that you must delete at least one signing key to create a new one.
 
 #### How To Use
-``
+```
  MainAPI.Instance.CreateSigningKey(callback);`
 ```
  Callback returns object of type SigningKeyResponse
